@@ -27,9 +27,90 @@
             <p class="is-defaultText">アカウント情報</p>
           </div>
           <form class="form-content" action="#" method="POST">
-            <!--
-              ここに続きのHTMLを書いていきましょう
-            -->
+            <div class="familyname">
+              <div class="name">
+                <p class="textstyle common">名字<span class="mark">※</span></p>
+                <label>
+                  <input type="text" name="lastname" class="namebox" required>
+                </label>
+              </div>
+              <div class="name">
+                <p class="textstyle common">名前<span class="mark">※</span></p>
+                <label>
+                  <input type="text" name="firstname" class="namebox" required>
+                </label>
+              </div>
+            </div>
+            <div class="genderbox">
+              <p class="gendertext common">性別</p>
+                <div class="itembox">
+                  <label class="gendercheckbox">
+                    <input type="radio" name="gender" class="man gendercheck">
+                    <span class="genderchild">男性</span>
+                  </label>
+                  <label class="gendercheckbox">
+                    <input type="radio" name="gender" class="woman gendercheck">
+                    <span class="genderchild">女性</span>
+                  </label>
+                  <label class="gendercheckbox">
+                    <input type="radio" name="gender" class="ex gendercheck">
+                    <span class="genderchild">その他</span>
+                  </label>
+                </div>
+            </div>
+            <div>
+              <p class="preftext common">出身</p>
+                <label>
+                  <select id="prefname" name="prefname" class="prefbox">
+                    <option value="Tokyo" selected>東京</option>
+                    <option value="Tiba">千葉</option>
+                    <option value="Saitama">埼玉</option>
+                    <option value="Kanagawa">神奈川</option>
+                  </select>
+                </label>
+            </div>
+            <div class="email parent">
+              <p class="itembox common">Eメール<span class="mark">※</span></p>
+                <label>
+                  <input type="email" name="email" class="formtext email" placeholder="ex) hoge@example.com" required>
+                </label>
+            </div>
+            <div class="phone parent">
+              <p class="itembox common">電話番号</p>
+                <label>
+                  <input type="tel" name="phone" class="formtext phone" placeholder="ex) 09012345678" >
+                </label>
+            </div>
+            <div class="password parent">
+              <p class="itembox common">パスワード<span class="mark">※</span></p>
+                <label>
+                  <input type="password" name="password" class="formtext pass" required>
+                </label>
+            </div>
+            <div class="passcheck parent">
+              <p class="itembox common">パスワード(確認用)<span class="mark">※</span></p>
+                <label>
+                  <input type="password" name="check" class="formtext passcheck" required>
+                </label>
+            </div>
+            <p class="h-course common">希望コース</p>
+              <div class="coursebox">
+                <input type="checkbox" name="#" value="front" id="front">
+                <label for="front" class="coursecheck">フロントエンド</label>
+              </div>
+              <div class="coursebox">
+                <input type="checkbox" name="#" value="back" id="back">
+                <label for="back" class="coursecheck">バックエンド</label>
+              </div>
+              <div class="coursebox">
+                <input type="checkbox" name="#" value="app" id="app">
+                <label for="app" class="coursecheck">アプリ</label>
+              </div>
+            <p class="detailbox common">備考</p>
+              <textarea name="detailtext" class="formtext detail" placeholder="何かあればご記入ください"></textarea>
+            <div class="formbutton">
+              <button type="submit" class="createbutton">アカウント作成</button>
+            </div>
             <p class="agreement">アカウントを作成することにより、<a class="link-color" href>利用規約</a>と<a class="link-color" href>プライバシーポリシー</a>に同意するものとします。</p>
           </form>
         </div>
