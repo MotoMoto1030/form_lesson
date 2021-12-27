@@ -355,3 +355,9 @@ input[type=checkbox]:checked + .coursecheck::before {
 .createbutton:hover {
   background-color: #01a6a4;
 }
+
+.createbutton:focus {
+  background-color: #fff;
+  color: #01bfbd;
+  border: 1px solid #d9d9d9;
+}
